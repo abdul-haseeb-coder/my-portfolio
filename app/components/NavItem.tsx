@@ -1,8 +1,10 @@
+import { PageKey } from "./Navigation"; // Import PageKey from the source where it's defined
+
 const NavItem: React.FC<{
   label: string;
-  page: string;
+  page: PageKey;
   active: boolean;
-  onNavLinkClick: (page: string) => void;
+  onNavLinkClick: (page: PageKey) => void;
 }> = ({ label, page, active, onNavLinkClick }) => (
   <li className="navbar-item">
     <button

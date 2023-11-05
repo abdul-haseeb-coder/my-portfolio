@@ -1,11 +1,18 @@
 import { useState } from "react";
+
 import Page from "./Page";
 import NavItem from "./NavItem";
 import Resume from "./pages/Resume";
-const Navigation: React.FC = () => {
-  const [activePage, setActivePage] = useState("about"); // Initialize with "about" or the default active page
+import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
 
-  const handleNavLinkClick = (page: string) => {
+type PageKey = "about" | "resume" | "portfolio" | "blog" | "contact";
+const Navigation: React.FC = () => {
+  const [activePage, setActivePage] = useState<PageKey>("about"); // Initialize with "about" or the default active page
+
+  const handleNavLinkClick = (page: PageKey) => {
     setActivePage(page);
     window.scrollTo(0, 0);
   };
@@ -16,10 +23,10 @@ const Navigation: React.FC = () => {
     { label: "Blog", page: "blog" },
     { label: "Contact", page: "contact" },
   ];
-  const pages = {
+  const pages: Record<PageKey, JSX.Element> = {
     about: (
       <Page page="about" activePage={activePage}>
-        About Page Content
+        <About />
       </Page>
     ),
     resume: (
@@ -29,17 +36,17 @@ const Navigation: React.FC = () => {
     ),
     portfolio: (
       <Page page="portfolio" activePage={activePage}>
-        Portfolio Page Content
+        <Portfolio />
       </Page>
     ),
     blog: (
       <Page page="blog" activePage={activePage}>
-        Blog Page Content
+        <Blog />
       </Page>
     ),
     contact: (
       <Page page="contact" activePage={activePage}>
-        Contact Page Content
+        <Contact />
       </Page>
     ),
   };
@@ -59,8 +66,8 @@ const Navigation: React.FC = () => {
           ))}
         </ul>
       </nav>
+
       {pages[activePage]}
-      {/* Define additional Page components for other sections */}
     </div>
   );
 };
