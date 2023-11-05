@@ -1,23 +1,34 @@
+"use client";
 import Link from "next/link";
+import { TbBrandUpwork } from "react-icons/tb";
 import {
+  Github,
   MapPin,
   Mail,
   PhoneCall,
   Instagram,
   CalendarDays,
   ChevronDown,
+  Twitter,
 } from "lucide-react";
+import { useState } from "react";
 
 import Image from "next/image";
+import SocialItem from "./../SocialItem";
 
 const Aside = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsActive(!isActive);
+  };
   return (
-    <aside>
+    <aside className={`sidebar ${isActive ? "active" : ""}`}>
       <div className="sidebar-info">
         <figure className="avatar-box">
           <Image
-            src="/my-avatar.png"
-            alt="Richard hanrick"
+            src="/coderabdul.jpg"
+            alt="Abdul Haseeb"
             width="80"
             height="80"
           />
@@ -25,13 +36,17 @@ const Aside = () => {
 
         <div className="info-content">
           <h1 className="name" title="Richard hanrick">
-            Richard hanrick
+            Abdull Haseeb
           </h1>
 
           <p className="title">Web developer</p>
         </div>
 
-        <button className="info_more-btn" data-sidebar-btn>
+        <button
+          className="info_more-btn"
+          onClick={toggleSidebar}
+          data-sidebar-btn
+        >
           <span>Show Contacts</span>
           <ChevronDown />
         </button>
@@ -49,9 +64,13 @@ const Aside = () => {
             <div className="contact-info">
               <p className="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" className="contact-link">
-                richard@example.com
-              </a>
+              <Link
+                href="mailto:
+                abdulhaseebcoder@gmail.com"
+                className="contact-link"
+              >
+                abdulhaseebcoder@gmail.com
+              </Link>
             </div>
           </li>
 
@@ -76,8 +95,7 @@ const Aside = () => {
 
             <div className="contact-info">
               <p className="contact-title">Birthday</p>
-
-              {/* <time datetime="1982-06-23">June 23, 1982</time> */}
+              <time dateTime="2003-10-12">October 12, 2003</time>
             </div>
           </li>
 
@@ -89,7 +107,7 @@ const Aside = () => {
             <div className="contact-info">
               <p className="contact-title">Location</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>FSD, Punjab, Pakistan</address>
             </div>
           </li>
         </ul>
@@ -97,23 +115,26 @@ const Aside = () => {
         <div className="separator"></div>
 
         <ul className="social-list">
-          <li className="social-item">
-            <Link href="#" className="social-link">
-              <Instagram />
-            </Link>
-          </li>
+          <SocialItem
+            href="https://www.upwork.com/freelancers/~017890f8a3624ddf25"
+            iconstyles={{ color: "#108600" }}
+          >
+            <TbBrandUpwork />
+          </SocialItem>
 
-          <li className="social-item">
-            <Link href="#" className="social-link">
-              <Instagram />
-            </Link>
-          </li>
+          <SocialItem
+            href="https://twitter.com/CoderAbdul165"
+            iconstyles={{ color: "#0C72B7" }}
+          >
+            <Twitter />
+          </SocialItem>
 
-          <li className="social-item">
-            <Link href="#" className="social-link">
-              <Instagram />
-            </Link>
-          </li>
+          <SocialItem
+            href="https://github.com/Abdull-Haseeb"
+            iconstyles={{ color: "#101000" }}
+          >
+            <Github />
+          </SocialItem>
         </ul>
       </div>
     </aside>
