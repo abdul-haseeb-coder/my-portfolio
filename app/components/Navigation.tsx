@@ -3,14 +3,15 @@ import { useState } from "react";
 import Page from "./Page";
 import NavItem from "./NavItem";
 import Resume from "./pages/Resume";
-import About from "./pages/About";
+import About from "./pages/About/About";
 import Portfolio from "./pages/Portfolio";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 
-type PageKey = "about" | "resume" | "portfolio" | "blog" | "contact";
+export type PageKey = "about" | "resume" | "portfolio" | "blog" | "contact";
 const Navigation: React.FC = () => {
-  const [activePage, setActivePage] = useState<PageKey>("about"); // Initialize with "about" or the default active page
+  const [activePage, setActivePage] = useState<PageKey>("about"); 
+  // Initialize with "about" or the default active page
 
   const handleNavLinkClick = (page: PageKey) => {
     setActivePage(page);
@@ -59,7 +60,7 @@ const Navigation: React.FC = () => {
             <NavItem
               key={navItem.page}
               label={navItem.label}
-              page={navItem.page}
+              page={navItem.page as PageKey}
               active={activePage === navItem.page}
               onNavLinkClick={handleNavLinkClick}
             />

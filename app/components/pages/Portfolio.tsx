@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Eye, ChevronDown } from "lucide-react";
 const Portfolio = () => {
   return (
-    <div>
+    <>
       <header>
         <h2 className="h2 article-title">Portfolio</h2>
       </header>
@@ -71,7 +71,13 @@ const Portfolio = () => {
                   <Eye />
                 </div>
 
-                <Image src="/project-1.jpg" alt="finance" loading="lazy" />
+                <Image
+                  src="/project-1.jpg"
+                  width={100} // Placeholder width
+                  height={100}
+                  alt="finance"
+                  loading="lazy"
+                />
               </figure>
 
               <h3 className="project-title">Finance</h3>
@@ -91,7 +97,13 @@ const Portfolio = () => {
                   <Eye />
                 </div>
 
-                <Image src="/project-2.png" alt="orizon" loading="lazy" />
+                <Image
+                  src="/project-2.png"
+                  alt="orizon"
+                  loading="lazy"
+                  width={100} // Placeholder width
+                  height={100}
+                />
               </figure>
 
               <h3 className="project-title">Orizon</h3>
@@ -111,7 +123,13 @@ const Portfolio = () => {
                   <Eye />
                 </div>
 
-                <Image src="/project-3.jpg" alt="fundo" loading="lazy" />
+                <Image
+                  src="/project-3.jpg"
+                  alt="fundo"
+                  loading="lazy"
+                  width={100} // Placeholder width
+                  height={100}
+                />
               </figure>
 
               <h3 className="project-title">Fundo</h3>
@@ -131,7 +149,13 @@ const Portfolio = () => {
                   <Eye />
                 </div>
 
-                <Image src="/project-4.png" alt="brawlhalla" loading="lazy" />
+                <Image
+                  src="/project-4.png"
+                  alt="brawlhalla"
+                  loading="lazy"
+                  width={100} // Placeholder width
+                  height={100}
+                />
               </figure>
 
               <h3 className="project-title">Brawlhalla</h3>
@@ -151,7 +175,13 @@ const Portfolio = () => {
                   <Eye />
                 </div>
 
-                <Image src="/project-5.png" alt="dsm." loading="lazy" />
+                <Image
+                  src="/project-5.png"
+                  alt="dsm."
+                  loading="lazy"
+                  width={100} // Placeholder width
+                  height={100}
+                />
               </figure>
 
               <h3 className="project-title">DSM.</h3>
@@ -171,7 +201,13 @@ const Portfolio = () => {
                   <Eye />
                 </div>
 
-                <Image src="/project-6.png" alt="metaspark" loading="lazy" />
+                <Image
+                  src="/project-6.png"
+                  alt="metaspark"
+                  loading="lazy"
+                  width={100} // Placeholder width
+                  height={100}
+                />
               </figure>
 
               <h3 className="project-title">MetaSpark</h3>
@@ -191,7 +227,13 @@ const Portfolio = () => {
                   <Eye />
                 </div>
 
-                <Image src="/project-7.png" alt="summary" loading="lazy" />
+                <Image
+                  src="/project-7.png"
+                  alt="summary"
+                  loading="lazy"
+                  width={100} // Placeholder width
+                  height={100}
+                />
               </figure>
 
               <h3 className="project-title">Summary</h3>
@@ -211,7 +253,13 @@ const Portfolio = () => {
                   <Eye />
                 </div>
 
-                <Image src="/project-8.jpg" alt="task manager" loading="lazy" />
+                <Image
+                  src="/project-8.jpg"
+                  alt="task manager"
+                  loading="lazy"
+                  width={100} // Placeholder width
+                  height={100}
+                />
               </figure>
 
               <h3 className="project-title">Task Manager</h3>
@@ -231,7 +279,13 @@ const Portfolio = () => {
                   <Eye />
                 </div>
 
-                <Image src="/project-9.png" alt="arrival" loading="lazy" />
+                <Image
+                  src="/project-9.png"
+                  alt="arrival"
+                  loading="lazy"
+                  width={100} // Placeholder width
+                  height={100}
+                />
               </figure>
 
               <h3 className="project-title">Arrival</h3>
@@ -241,7 +295,7 @@ const Portfolio = () => {
           </li>
         </ul>
       </section>
-    </div>
+    </>
   );
 };
 
