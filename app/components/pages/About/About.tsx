@@ -1,23 +1,22 @@
-import React,{useState} from "react";
-// import Image from "next/image";
+import React, { useState } from "react";
 
 import ServiceSection from "./ServiceSection";
-import TestimonialSection from "./TestimonialSection";
-import TestimonialModal from "./TestimonialModal";
+// import TestimonialSection from "./TestimonialSection";
+// import TestimonialModal from "./TestimonialModal";
 import Clients from "./Clients";
 import Intro from "./Intro";
 const About = () => {
-  const [selectedTestimonial, setSelectedTestimonial] = useState(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [selectedTestimonial, setSelectedTestimonial] = useState(null);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openTestimonialModal = (testimonial) => {
-    setSelectedTestimonial(testimonial);
-    setIsModalOpen(true);
-  };
+  // const openTestimonialModal = (testimonial) => {
+  //   setSelectedTestimonial(testimonial);
+  //   setIsModalOpen(true);
+  // };
 
-  const closeTestimonialModal = () => {
-    setIsModalOpen(false);
-  };
+  // const closeTestimonialModal = () => {
+  //   setIsModalOpen(false);
+  // };
 
   return (
     <div>
@@ -25,16 +24,15 @@ const About = () => {
         <h2 className="h2 article-title">About me</h2>
       </header>
 
-    
-<Intro/>
+      <Intro />
       <ServiceSection />
-<TestimonialSection openModal={openTestimonialModal} />
-      {isModalOpen && (
+      {/* <TestimonialSection openModal={openTestimonialModal} /> */}
+      {/* {isModalOpen && (
         <TestimonialModal
           testimonial={selectedTestimonial}
           closeModal={closeTestimonialModal}
         />
-      )}
+      )} */}
       <Clients />
     </div>
   );

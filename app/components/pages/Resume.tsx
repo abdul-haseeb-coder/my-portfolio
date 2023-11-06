@@ -108,7 +108,7 @@ export default function Resume() {
         <ul className="skills-list content-card">
           <li className="skills-item">
             <div className="title-wrapper">
-              <h5 className="h5">Web design</h5>
+              <h5 className="h5">Frontend Development</h5>
               <data value="80">80%</data>
             </div>
 
@@ -122,7 +122,7 @@ export default function Resume() {
 
           <li className="skills-item">
             <div className="title-wrapper">
-              <h5 className="h5">Graphic design</h5>
+              <h5 className="h5">Backend Development</h5>
               <data value="70">70%</data>
             </div>
 
@@ -136,7 +136,7 @@ export default function Resume() {
 
           <li className="skills-item">
             <div className="title-wrapper">
-              <h5 className="h5">Branding</h5>
+              <h5 className="h5">Web Design</h5>
               <data value="90">90%</data>
             </div>
 
@@ -150,14 +150,27 @@ export default function Resume() {
 
           <li className="skills-item">
             <div className="title-wrapper">
-              <h5 className="h5">WordPress</h5>
-              <data value="50">50%</data>
+              <h5 className="h5">Java</h5>
+              <data value="70">70%</data>
             </div>
 
             <div className="skill-progress-bg">
               <div
                 className="skill-progress-fill"
-                style={{ width: "50%" }}
+                style={{ width: "70%" }}
+              ></div>
+            </div>
+          </li>
+          <li className="skills-item">
+            <div className="title-wrapper">
+              <h5 className="h5">JavaScript</h5>
+              <data value="90">90%</data>
+            </div>
+
+            <div className="skill-progress-bg">
+              <div
+                className="skill-progress-fill"
+                style={{ width: "90%" }}
               ></div>
             </div>
           </li>
