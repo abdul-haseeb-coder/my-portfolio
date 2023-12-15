@@ -30,6 +30,16 @@ const Intro = () => {
         brands to create stunning web designs.
       </p>
       <br />
+      <br />
+
+      <div className="notification-bar">
+      <span role="img" aria-label="Warning Emoji" className="emoji">
+        ⚠️
+      </span>
+      Contact Service Page and Images are currently not available. Because I cannot afford ?
+💵 to buy AWS S3 bucket subscription to store images on Server and SMTP Service. I apologize for any inconvenience.
+    </div>
+
     </section>
   );
 };
