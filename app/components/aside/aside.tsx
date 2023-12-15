@@ -6,7 +6,7 @@ import {
   MapPin,
   Mail,
   PhoneCall,
-  Instagram,
+  // Instagram,
   CalendarDays,
   ChevronDown,
   Twitter,
@@ -69,7 +69,7 @@ const Aside = () => {
                 abdulhaseebcoder@gmail.com"
                 className="contact-link"
               >
-                abdulhaseebcoder@gmail.com
+                abdullhaseebonline@gmail.com
               </Link>
             </div>
           </li>

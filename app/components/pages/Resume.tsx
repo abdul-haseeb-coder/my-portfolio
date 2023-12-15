@@ -20,38 +20,27 @@ export default function Resume() {
         <ol className="timeline-list">
           <li className="timeline-item">
             <h4 className="h4 timeline-item-title">
-              University school of the arts
+              Intermediate in Computer Science @ Students&apos; Inn College
             </h4>
 
-            <span>2007 — 2008</span>
+            <span>2021 — 2023</span>
 
             <p className="timeline-text">
-              Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
-              delenit atque corrupti, quos dolores et quas molestias exceptur.
-            </p>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">New york academy of art</h4>
-
-            <span>2006 — 2007</span>
-
-            <p className="timeline-text">
-              Ratione voluptatem sequi nesciunt, facere quisquams facere menda
-              ossimus, omnis voluptas assumenda est omnis..
+              I embarked on my academic journey at Students Inn College, where I
+              pursued a Bachelor&apos;s degree in Computer Science. 🎓
             </p>
           </li>
 
           <li className="timeline-item">
             <h4 className="h4 timeline-item-title">
-              High school of art and design
+              Design Principles - Web Design - Graphic Design
             </h4>
 
-            <span>2002 — 2004</span>
+            <span>2020 — 2021</span>
 
             <p className="timeline-text">
-              Duis aute irure dolor in reprehenderit in voluptate, quila
-              voluptas mag odit aut fugit, sed consequuntur magni dolores eos.
+              A creative mind at the intersection of Design Principles, Web
+              Design, and Graphic Design. 🌟
             </p>
           </li>
         </ol>
@@ -68,35 +57,38 @@ export default function Resume() {
 
         <ol className="timeline-list">
           <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Creative director</h4>
+            <h4 className="h4 timeline-item-title">
+              Full Stack Developer - Basic DevOps
+            </h4>
 
-            <span>2015 — Present</span>
+            <span>January,2023 — Present</span>
 
             <p className="timeline-text">
-              Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit
-              atque corrupti, quos dolores et qvuas molestias exceptur.
+              a passionate Full Stack Developer who is not just about crafting
+              elegant front-end experiences and robust back-end solutions but
+              also has a knack for basic DevOps practices. 💻🔧.
             </p>
           </li>
 
           <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Art director</h4>
+            <h4 className="h4 timeline-item-title">MERN Stack Developer</h4>
 
-            <span>2013 — 2015</span>
+            <span>2021 — 2023</span>
 
             <p className="timeline-text">
-              Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
-              delenit atque corrupti, quos dolores et quas molestias exceptur.
+              I am a developer with a wealth of experience in the MERN &quot;
+              MongoDB, Express.js, React, Node.js &quot; stack.
             </p>
           </li>
 
           <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Web designer</h4>
+            <h4 className="h4 timeline-item-title">Wordpress Developer</h4>
 
-            <span>2010 — 2013</span>
+            <span>2020 — 2021</span>
 
             <p className="timeline-text">
-              Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
-              delenit atque corrupti, quos dolores et quas molestias exceptur.
+              A dedicated developer with a specialization in the dynamic world
+              of WordPress. 🚀{" "}
             </p>
           </li>
         </ol>
@@ -150,7 +142,7 @@ export default function Resume() {
 
           <li className="skills-item">
             <div className="title-wrapper">
-              <h5 className="h5">Java</h5>
+              <h5 className="h5">React.js</h5>
               <data value="70">70%</data>
             </div>
 
