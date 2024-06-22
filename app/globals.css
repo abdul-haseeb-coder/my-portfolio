@@ -4,21 +4,6 @@
     hsl(240, 1%, 25%) 3%,
     hsl(0, 0%, 19%) 97%
   );
-  .notification-bar {
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-    padding: 10px;
-    background-color: #ff4d4f; /* Danger color */
-    color: #fff; /* Text color */
-    font-size: 16px;
-  }
-
-  .emoji {
-    margin-right: 8px;
-    font-size: 20px;
-  }
-
   --bg-gradient-jet: linear-gradient(
       to bottom right,
       hsla(240, 1%, 18%, 0.251) 0%,
@@ -2035,4 +2020,18 @@ textarea.form-input::-webkit-resizer {
   .timeline-text {
     max-width: 700px;
   }
+}
+.notification-bar {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #ff4d4f; /* Danger color */
+  color: #fff; /* Text color */
+  font-size: 16px;
+}
+
+.emoji {
+  margin-right: 8px;
+  font-size: 20px;
 }
