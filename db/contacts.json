@@ -1,0 +1,33 @@
+[
+  {
+    "type": "Email",
+    "icon": "/mail.svg",
+    "alt": "Email Icon",
+    "link": {
+      "href": "mailto:abdulhaseebcoder@gmail.com",
+      "text": "abdullhaseebonline@gmail.com"
+    }
+  },
+  {
+    "type": "Phone",
+    "icon": "/phone-call-2.svg",
+    "alt": "Phone Icon",
+    "link": {
+      "href": "tel:+923274299852",
+      "text": "+92 (327) 429-9852"
+    }
+  },
+  {
+    "type": "Birthday",
+    "icon": "/calendar-days.svg",
+    "alt": "Birthday Icon",
+    "dateTime": "2003-10-12",
+    "text": "October 12, 2003"
+  },
+  {
+    "type": "Location",
+    "icon": "/mappin.svg",
+    "alt": "Location Icon",
+    "address": "FSD, Punjab, Pakistan"
+  }
+]
