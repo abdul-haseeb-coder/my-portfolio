@@ -1,8 +1,7 @@
-
 "use client";
 
 import { ReactNode, useState } from "react";
-
+import styles from "./SidebarToggle.module.css";
 interface SidebarToggleProps {
   children: ReactNode;
 }
@@ -16,14 +15,12 @@ const SidebarToggle: React.FC<SidebarToggleProps> = ({ children }) => {
 
   return (
     <>
-      <button
-        className="info_more-btn"
-        onClick={toggleSidebar}
-        data-sidebar-btn
-      >
+      <button className={styles.info_moreBtn} onClick={toggleSidebar}>
         <span>Show Contacts</span>
       </button>
-      <div className={`sidebar-info_more ${isActive ? "active" : ""}`}>
+      <div
+        className={`${styles.sidebarInfoMore} ${isActive ? styles.active : ""}`}
+      >
         {children}
       </div>
     </>

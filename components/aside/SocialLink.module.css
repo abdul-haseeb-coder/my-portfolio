@@ -1,0 +1,8 @@
+.socialItem .socialLink {
+  color: var(--light-gray-70);
+  font-size: 18px;
+}
+
+.socialItem .socialLink:hover {
+  color: var(--light-gray);
+}

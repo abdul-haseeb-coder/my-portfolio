@@ -1,8 +1,7 @@
-// Aside.tsx
 import Image from "next/image";
-import SidebarToggle from "../SidebarToggle";
-import ContactsList from "../ContactList";
-import SocialList from "../SocialList";
+import SidebarToggle from "./SidebarToggle";
+import ContactsList from "./ContactList";
+import SocialList from "./SocialList";
 
 const Aside: React.FC = () => {
   return (

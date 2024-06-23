@@ -2,18 +2,19 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import contacts from "@/db/contacts.json";
+import styles from "./ContactList.module.css";
 
 const ContactsList = () => (
-  <ul className="contacts-list">
+  <ul className={styles.contactsList}>
     {contacts.map((contact, index) => (
-      <li className="contact-item" key={index}>
-        <div className="icon-box">
+      <li className={styles.contactItem} key={index}>
+        <div className={styles.iconBox}>
           <Image src={contact.icon} alt={contact.alt} width="30" height="30" />
         </div>
-        <div className="contact-info">
-          <p className="contact-title">{contact.type}</p>
+        <div className={styles.contactInfo}>
+          <p className={styles.contactTitle}>{contact.type}</p>
           {contact.link ? (
-            <Link href={contact.link.href} className="contact-link">
+            <Link href={contact.link.href} className={styles.contactLink}>
               {contact.link.text}
             </Link>
           ) : contact.dateTime ? (
