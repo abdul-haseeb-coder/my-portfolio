@@ -1,7 +1,7 @@
 import React from "react";
-import SocialLink from "./SocialLink"; // Adjust the path as necessary
-import Image from "next/image"; // or the appropriate import for your Image component
-import socialLinks from "@/db/socialLinks.json"; // Adjust the path to your JSON file
+import SocialLink from "./SocialLink";
+import Image from "next/image";
+import socialLinks from "@/db/socialLinks.json";
 import styles from "./SocialList.module.css";
 
 const SocialList = () => (

@@ -6,3 +6,9 @@
 .socialItem .socialLink:hover {
   color: var(--light-gray);
 }
+.socialLinkBox {
+  background: var(--border-gradient-onyx);
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+}

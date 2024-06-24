@@ -1,0 +1,15 @@
+@media (min-width: 1024px) {
+  .mainContent {
+    position: relative;
+    width: max-content;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1250px) {
+  .mainContent {
+    min-width: 75%;
+    width: 75%;
+    margin: 0;
+  }
+}

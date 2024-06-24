@@ -1,3 +1,4 @@
+/* not Satisfied  */
 .contactsList {
   display: grid;
   grid-template-columns: 1fr;
@@ -58,6 +59,11 @@
 /* Media Queries */
 
 @media (min-width: 580px) {
+  .contactInfo {
+    max-width: calc(100% - 64px);
+    width: calc(100% - 64px);
+  }
+
   .contactsList {
     gap: 20px;
   }
@@ -67,16 +73,34 @@
     border-radius: 12px;
     font-size: 18px;
   }
+  .iconBoxImg {
+    height: 18px !important;
+    width: 18px !important;
+    --ionicon-stroke-width: 35px;
+  }
 }
 @media (min-width: 768px) {
   .contactsList {
     grid-template-columns: 1fr 1fr;
     gap: 30px 15px;
   }
+  /* custom img style */
+  .iconBoxImg {
+    height: 22px !important;
+    width: 22px !important;
+    --ionicon-stroke-width: 35px;
+  }
 }
 @media (min-width: 1250px) {
-  .contactsList {
-    grid-template-columns: 1fr;
+  .contactInfo :is(.contact-link) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .contactInfo :is(.contact-link, time, address) {
+    --fs-7: 14px;
+    font-weight: var(--fw-300);
   }
   .contactsList {
     grid-template-columns: 1fr;
