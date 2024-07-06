@@ -1,18 +1,11 @@
+
 "use client";
 import React from "react";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
-export default function Navbar() {
-  const router = useRouter();
 
-  const handleClick = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    href: string
-  ) => {
-    e.preventDefault();
-    router.push(href);
-  };
+export default function Navbar() {
 
   const navLinks = [
     { href: "/", label: "About" }, // Default path is '/' for About
@@ -22,6 +15,9 @@ export default function Navbar() {
     { href: "/contact", label: "Contact" },
   ];
 
+  const path = usePathname();
+  console.log(path);
+
   return (
     <nav className={styles.navbar}>
       <ul className={styles.navbarList}>
@@ -29,13 +25,7 @@ export default function Navbar() {
           <li key={link.href} className={styles.navbarItem}>
             <Link
               href={link.href}
-              onClick={(e) => handleClick(e, link.href)}
-              className={`${styles.navbarLink} ${
-                router.asPath === link.href ||
-                (router.asPath === "/" && link.href === "/about")
-                  ? styles.active
-                  : ""
-              }`}
+              className={`${styles.navbarLink} ${path === link.href ? styles.active : ''}`}
             >
               {link.label}
             </Link>
@@ -45,3 +35,4 @@ export default function Navbar() {
     </nav>
   );
 }
+

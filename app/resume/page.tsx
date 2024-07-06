@@ -1,3 +1,4 @@
 export default function page() {
-  return <div>Blog</div>;
+  return <div>
+  <p>Resume</p></div>;
 }
