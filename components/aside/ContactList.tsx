@@ -9,7 +9,13 @@ const ContactsList = () => (
     {contacts.map((contact, index) => (
       <li className={styles.contactItem} key={index}>
         <div className={styles.iconBox}>
-          <Image className={styles.iconBoxImg} src={contact.icon} alt={contact.alt} width="30" height="30" />
+          <Image
+            className={styles.iconBoxImg}
+            src={contact.icon}
+            alt={contact.alt}
+            width="30"
+            height="30"
+          />
         </div>
         <div className={styles.contactInfo}>
           <p className={styles.contactTitle}>{contact.type}</p>

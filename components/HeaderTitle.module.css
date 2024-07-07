@@ -1,0 +1,40 @@
+.articleTitle {
+  position: relative;
+  padding-bottom: 7px;
+}
+
+.articleTitle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background: var(--text-gradient-yellow);
+  border-radius: 3px;
+}
+.articleTitle {
+  margin-bottom: 30px;
+}
+
+.h2 {
+  font-size: var(--fs-1);
+  color: var(--white-2);
+  text-transform: capitalize;
+}
+@media (min-width: 580px) {
+  .articleTitle {
+    font-weight: var(--fw-600);
+    padding-bottom: 15px;
+  }
+
+  .articleTitle::after {
+    width: 40px;
+    height: 5px;
+  }
+}
+@media (min-width: 768px) {
+  .articleTitle {
+    padding-bottom: 20px;
+  }
+}

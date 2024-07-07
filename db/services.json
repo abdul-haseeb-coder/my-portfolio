@@ -1,0 +1,26 @@
+[
+  {
+    "img": "/icon-design.svg",
+    "alt": "design icon",
+    "title": "Web design",
+    "description": "The most modern and high-quality design made at a professional level."
+  },
+  {
+    "img": "/icon-dev.svg",
+    "alt": "Web development icon",
+    "title": "Web development",
+    "description": "High-quality development of sites at the professional level."
+  },
+  {
+    "img": "/icon-app.svg",
+    "alt": "mobile app icon",
+    "title": "Mobile app development",
+    "description": "Professional development of applications for iOS and Android with React Native."
+  },
+  {
+    "img": "/blockchain-icon.svg",
+    "alt": "camera icon",
+    "title": "Blockchain Development",
+    "description": "I specialize in blockchain technology, providing high-quality solutions at an advanced level."
+  }
+]

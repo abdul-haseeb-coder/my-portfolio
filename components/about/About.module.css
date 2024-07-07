@@ -1,0 +1,9 @@
+.about .articleTitle {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 580px) {
+  .about .article-title {
+    margin-bottom: 20px;
+  }
+}

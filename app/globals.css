@@ -129,6 +129,24 @@ textarea {
   font: inherit;
 }
 
+.has-scrollbar::-webkit-scrollbar {
+  width: 5px; /* for vertical scrollbar */
+  height: 5px; /* for horizontal scrollbar */
+}
+
+.has-scrollbar::-webkit-scrollbar-track {
+  background: var(--onyx);
+  border-radius: 5px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--orange-yellow-crayola);
+  border-radius: 5px;
+}
+
+.has-scrollbar::-webkit-scrollbar-button {
+  width: 20px;
+}
 ::selection {
   background: var(--orange-yellow-crayola);
   color: var(--smoky-black);
@@ -146,7 +164,27 @@ html {
 body {
   background: var(--smoky-black);
 }
+article {
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+article {
+  display: block;
+  animation: fade 0.5s ease backwards;
+}
 
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media (min-width: 580px) {
   /**
      * CUSTOM PROPERTY
@@ -165,6 +203,36 @@ body {
     --fs-7: 15px;
     --fs-8: 12px;
   }
+  article {
+    width: 520px;
+    margin-inline: auto;
+    padding: 30px;
+  }
+}
+
+.h2,
+.h3,
+.h4,
+.h5 {
+  color: var(--white-2);
+  text-transform: capitalize;
+}
+
+.h2 {
+  font-size: var(--fs-1);
+}
+
+.h3 {
+  font-size: var(--fs-2);
+}
+
+.h4 {
+  font-size: var(--fs-4);
+}
+
+.h5 {
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
 }
 
 @media (min-width: 768px) {
@@ -237,5 +305,13 @@ body {
 
   body::-webkit-scrollbar-button {
     height: 60px;
+  }
+  .sidebar,
+  article {
+    width: auto;
+  }
+
+  article {
+    min-height: 100%;
   }
 }
