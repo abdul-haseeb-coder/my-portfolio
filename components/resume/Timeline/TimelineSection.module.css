@@ -1,0 +1,61 @@
+.timeline {
+  margin-bottom: 30px;
+}
+
+.timeline .titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.timelineListt {
+  font-size: var(--fs-6);
+  margin-left: 45px;
+}
+
+.timelineList span {
+  color: var(--vegas-gold);
+  font-weight: var(--fw-400);
+  line-height: 1.6;
+}
+
+.iconBox {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: var(--orange-yellow-crayola);
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+
+.iconBox::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.iconBox img {
+  --ionicon-stroke-width: 35px;
+}
+
+@media (min-width: 580px) {
+  .timelineList {
+    margin-left: 65px;
+  }
+  .iconBox {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    font-size: 18px;
+  }
+}

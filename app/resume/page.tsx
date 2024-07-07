@@ -1,4 +1,5 @@
+import Resume from "@/components/resume/Resume";
+
 export default function page() {
-  return <div>
-  <p>Resume</p></div>;
+  return <Resume />;
 }
