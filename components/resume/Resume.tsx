@@ -9,7 +9,7 @@ type Props = {};
 function Resume() {
   return (
     <article className={`${styles.about}`}>
-      <HeaderTitle>About me</HeaderTitle>
+      <HeaderTitle>Resume</HeaderTitle>
       <Timeline />
       <MySkills />
     </article>
