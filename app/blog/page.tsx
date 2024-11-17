@@ -1,7 +1,7 @@
 export default function Home() {
   return (
 <div>
-<p>blog</p>
+<p>Under Construction</p>
 </div>
   )
 }
