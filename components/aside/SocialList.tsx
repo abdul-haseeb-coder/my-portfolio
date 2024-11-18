@@ -7,11 +7,9 @@ import styles from "./SocialList.module.css";
 const SocialList = () => (
   <ul className={styles.socialList}>
     {socialLinks.map((link, index) => (
-      <li key={index}>
-        <SocialLink href={link.href}>
+        <SocialLink href={link.href} key={index}>
           <Image src={link.src} alt={link.alt} width="20" height="20" />
         </SocialLink>
-      </li>
     ))}
   </ul>
 );
